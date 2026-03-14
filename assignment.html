@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+<center>
+        <img id="myIMage"  src="bulb_off.gif">
+</center>    
+<CENTER>
+            <select onchange="document.getElementById('myIMage') .src=this.value">
+            <option  value='bulb_off.gif' >Bulb Off</option>
+            <option  value='bulb_on.gif' >Bulb On</option>
+            </select>
+</CENTER>
+
+<script>
+    function onANDoff (value) {
+        if (value ="on") {
+            alert("turn on the light?");
+            document.getElementById("myIMage").src='bulb_on.gif';
+        } else if (value === "off") {
+            alert("turn off the light?"); 
+            document.getElementById("myIMage").src='bulb_off.gif';
+        }
+    }
+</script>
+</body>
+</html>
