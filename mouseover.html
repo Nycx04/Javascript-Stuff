@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"  style="height: 500px; width:500px; border:solid 2px black; margin:auto;" onmouseover="changebackground()" onmouseout="removecolor()">
+        
+    </div>
+    <script>
+        function changebackground() {
+            document.getElementById('box').style.backgroundColor="blue";
+        }
+        function removecolor() {
+            document.getElementById ('box').style.backgroundColor="white";
+        }
+    </script>
+</body>
+</html>
