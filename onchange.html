@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div align="center">
+        <select onchange="display(this.value)">
+            <option>Gauss</option>
+            <option>Mirage</option>
+            <option>Khora</option>
+        </select>
+        <p id="pg"></p>
+    </div>
+    <script>
+        function display(val) {
+            onchange=document.getElementById('pg').innerText = "My favorite Warframe is " + val;
+        }
+    </script>
+</body>
+</html>
