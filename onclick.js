@@ -1,0 +1,1 @@
+onclick.document.GetElementById("Wuwa") .src="11-1.thumb128.png";
