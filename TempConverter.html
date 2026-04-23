@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #Box{
+            display: flex;
+            border:2px solid black;
+            height: 200px;
+            width:400px;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            gap:10px;
+            background-image: url(kevs.png);
+            background-repeat: no-repeat;
+            background-position: center ;
+            background-size:cover;
+            opacity: 0.8;
+        }
+        Body{
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+            height: 100vh;
+            background-color: grey;
+        }
+        #temp input {
+            height:25px;
+        }
+        #converted{
+            height:30px;
+            width:100px;
+        }
+    </style>
+
+    <div id="Box">
+        <div id="temp">
+            <input id="input" type="text" placeholder="Input Temp"> =
+            <input id="output" type="text" placeholder="Result" readonly>
+        </div>
+        <div>
+            <label>
+                <input type="radio" name="unit" value="c" checked>
+                Celsius
+            </label>
+            <label>
+                <input type="radio" name="unit" value="f">
+                Fahrenheit
+            </label>
+        </div>
+        <div id="convert">
+            <button id="converted" onclick="Solve()">Convert</button>
+        </div>
+    </div>
+
+
+    <script src="TempConverter.js"></script>
+</body>
+</html>
